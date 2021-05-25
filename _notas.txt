@@ -1,0 +1,40 @@
+PROYECTO Rick-Y-Morty
+    Objetivo
+        -> desarrollar un front end donde se puedan visualizar todos los personajes del API de Rick and Morty
+    Recursos
+        - API de datos: https://rickandmortyapi.com/documentation
+    Requerimientos
+        - listar y páginar todos los personajes 
+        - al momento de darle click a un personaje debe llevar a una nueva página con el detalle de este personaje donde debe aparecer toda la información relacionada al personaje
+        - cada personaje debe tener su imagen respectiva tanto en el detalle como en el listado
+        - la página de listar todos los personajes debe contar con filtro de búsqueda por todos los campos que el api permita
+        - opcion a guardar en lista de favoritos de personajes
+    Limites y alcanses
+        - Debe existir un servicio backend desarrollado en node js donde tanto desde la lista como desde el detalle yo pueda almacenar en una base de datos de tu preferencia ( sql, no-sql )
+        - al momento de cargar la lista o el detalle de un personaje la vista debe consumir un servicio creado en node js que me indique si es favorito o no y mostrarlo visualmente en el front end.
+    Reglas
+        - tanto el proyecto front end como el backend deben ser en js para el front end usaremos Next.Js con React y para el Backend usaremos Express
+        - ambos proyectos deben estar dock erizados y orquestados en la misma red de docker con docker compose y comunicarse internamente 
+        - se debe entregar un solo repositorio donde se encuentre el proyecto front end y el proyecto backend
+        - para la interfaces grafica se debe usar https://material-ui.com/
+        - tanto el front end como el backend deben ir con pruebas unitarias, linters preferiblemente usando eslint, el código debe poder ser compatible con es6 en adelante
+        - debe contar con toda la documentación necesaria para ejecutar el proyecto en caso de usar bases de datos externas las credenciales y todo lo que se requiera para ejecutar el proyecto
+        - aunque se recomienda también usar la base de datos como un servicio de docker orquestado en la misma red de los demás servicios.
+
+    Dudas
+        - Se pueden usar generadores de codigo? por ejemplo express proporciona esto: https://expressjs.com/es/starter/generator.html
+        - 
+
+    Desarrollo
+        - Herramientas
+            * NodeJS (10.19.0)
+                * Express (4.17.1)
+                    -> express-generator
+                * React (17.0.2)
+                    -> Next.js (10.2.2)
+            * NPM (6.14.4)
+            * Gulp (2.3.0)
+            * GIT (2.25.1)
+                -> Repositorio https://github.com/oscorp54/p-rick-morty.git
+            * Visual Studio Code
+            * Postman
