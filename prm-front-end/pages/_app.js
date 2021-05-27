@@ -9,7 +9,6 @@ export default function MyApp(props) {
   const { Component, pageProps } = props;
 
   React.useEffect(() => {
-    // Remove the server-side injected CSS.
     const jssStyles = document.querySelector('#jss-server-side');
     if (jssStyles) {
       jssStyles.parentElement.removeChild(jssStyles);
@@ -35,13 +34,3 @@ MyApp.propTypes = {
   Component: PropTypes.elementType.isRequired,
   pageProps: PropTypes.object.isRequired,
 };
-
-/*
-import '../styles/globals.css'
-
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
-}
-
-export default MyApp
-*/
